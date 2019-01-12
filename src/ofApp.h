@@ -55,10 +55,12 @@ class ofApp : public ofBaseApp{
         octave oct4;
 
         std::vector<string> notes;
+        std::vector<octave> octaves;
+        std::vector<float> noteFreq;
         std::vector<int> noteTrigR;
 
         float hue;
         ofColor c;
-        float o; // variable for controlling the octave
+        int o; // variable for controlling the octave
 
 };
