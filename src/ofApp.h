@@ -46,13 +46,6 @@ class ofApp : public ofBaseApp{
 
         // octave visualiser
         ofTrueTypeFont f0;
-        octave oct_2;
-        octave oct_1;
-        octave oct0;
-        octave oct1;
-        octave oct2;
-        octave oct3;
-        octave oct4;
 
         std::vector<string> notes;
         std::vector<octave> octaves;
