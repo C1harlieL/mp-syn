@@ -83,8 +83,10 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofBackgroundGradient(ofColor(0), ofColor(200));
-
+    ofTranslate(200, 200);
     // Draw the oct1ave
+    ofSetColor(150);
+    ofDrawRectangle(40, 0, 480, 320);
     ofPushMatrix();
 
 
@@ -150,6 +152,8 @@ void ofApp::keyPressed(int key){
     // are for A through to G#
     // (a full octave)
     if(key==97){
+
+//        std::cout << "dlsjfl" << std::endl;
         if(o==0){
             freq = noteFreq[0];
             trigger = 1;
@@ -562,11 +566,12 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 
+    trigger = 1;
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+    trigger = 0;
 }
 
 //--------------------------------------------------------------
