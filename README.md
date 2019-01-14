@@ -26,7 +26,11 @@ The dots on the grid react to its corresponding note being played. Another use o
 - "Sequencing abilities of some kind would be cool. A really interesting one would be to have some way to draw a patter across the grid and then have that be the sequence to play"
    I like this idea alot. You could really explore how we perceive pattern by replicating. They way I implemented the octaves, makes it kind of awkward to travel between notes in different octaves. I think to implement it would require a drastic restructuring of the program so I didn't have time to add this. Good idea for a future project though.
 
-I'm happy with the layout and I like the base idea
+# Summary
+
+I'm happy with the layout and I like the base idea, but I think it would require more features for it to be effective. Such as a being able to receive midi data, and take patterns. I think I would develop it less as a synth and more as a program that can receive midi notes in and visulise them in colour on a grid or various other musical layouts that are similar to instruments like a EAGDBE guitar layout. Or a piano like layout where the sharp and black keys are distinctive from the white keys in some way.
+
+
 
 References:
 
