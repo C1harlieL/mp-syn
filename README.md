@@ -22,3 +22,4 @@ The idea of colour associated with sound I borrowed from the perceptual phenomen
 - "Midi support would be a good expansion."
 
 - "Sequencing abilities of some kind would be cool. A really interesting one would be to have some way to draw a patter across the grid and then have that be the sequence to play"
+   I like this idea alot. You could really explore how we perceive pattern.
