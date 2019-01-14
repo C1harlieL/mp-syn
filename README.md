@@ -12,7 +12,7 @@ You default to octave 3 and can use the ',' and '.' keys to move down and up and
 
 The idea of colour associated with sound I borrowed from the perceptual phenomenon of synesthesia, where one cognitive pathway such as the auditory one, causes automatic involuntary experiences in a second sensory pathway, maybe the visual one. This creates the effect of people seeing sounds, maybe as colours. Certain musical keys may create visual effects of a certain colour for a synesthete. Colours in my app are used to represent the most common twelve notes used in the western tonal music as a synesthetic visualiser for the notes. Colour could help with recognising patterns in music and to see which part of the octave you are in.
 
-The dots on the grid react to its corresponding note being played.
+The dots on the grid react to its corresponding note being played. Another use of it would be a visualiser, to visualise melodies as patterns of colour. Being a visually minded person, I constantly visualise shapes and patterns on the guitar and piano when playing. Have a visual output while playing of coloured notes could allow for easier and faster learning of music, as the patterns of colours are easier to visualise.
 
 ![Interface image ](https://github.com/C1harlieL/mp-syn/blob/master/interface.jpeg)
 
@@ -26,6 +26,7 @@ The dots on the grid react to its corresponding note being played.
 - "Sequencing abilities of some kind would be cool. A really interesting one would be to have some way to draw a patter across the grid and then have that be the sequence to play"
    I like this idea alot. You could really explore how we perceive pattern by replicating. They way I implemented the octaves, makes it kind of awkward to travel between notes in different octaves. I think to implement it would require a drastic restructuring of the program so I didn't have time to add this. Good idea for a future project though.
 
+I'm happy with the layout and I like the base idea
 
 References:
 
