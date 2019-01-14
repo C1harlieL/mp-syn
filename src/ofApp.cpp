@@ -57,7 +57,7 @@ void ofApp::setup(){
 
     // asdr controllers
     gui.setup();
-    gui.add(attackSlide.setup("attack", 10, 5, 1000));
+    gui.add(attackSlide.setup("attack", 10, 1, 1000));
     gui.add(decaySlide.setup("decay", 1000, 10, 2000));
     gui.add(sustainSlide.setup("sustain", 0.5, 0.1, 2.0));
     gui.add(releaseSlide.setup("release", 500, 10, 2000));

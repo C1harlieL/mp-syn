@@ -16,9 +16,9 @@ The idea of colour associated with sound I borrowed from the perceptual phenomen
 
 # Peer input
 
-- It could have controls for the parameters of the synth such as controls for the adsr envelope or the type of wave that is generated.
--- I added these in these to control the enevelope
+- "It could have controls for the parameters of the synth such as controls for the adsr envelope or the type of wave that is generated."
+  I added in sliders to control the envelope, which adds more variety to the sound that can be produced.
 
-- Midi support would be a good expansion.
+- "Midi support would be a good expansion."
 
--
+- "Sequencing abilities of some kind would be cool. A really interesting one would be to have some way to draw a patter across the grid and then have that be the sequence to play"
