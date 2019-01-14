@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxMaxim.h"
+#include "ofxGui.h"
 #include "octave.h"
 
 class ofApp : public ofBaseApp{
@@ -23,19 +24,21 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
 		
-
+        // sound setup
         int sampleRate;
         int bufferSize;
         int numChannels;
         void audioOut(float * output, int bufferSize, int nChannels);
         //ofSoundStream soundStream;
-
+        // main oscillator
         maxiOsc oscillator;
+        // others
         maxiOsc oscillator2;
         maxiOsc oscillator3;
         maxiOsc oscillator4;
-
+        // envelope object
         maxiEnv envelope;
+        // frequency and trigger
         float freq;
         int trigger;
 
@@ -46,14 +49,20 @@ class ofApp : public ofBaseApp{
 
         // octave visualiser
         ofTrueTypeFont f0;
-
         std::vector<string> notes;
         std::vector<octave> octaves;
         std::vector<float> noteFreq;
         std::vector<int> noteTrigR;
-
         float hue;
         ofColor c;
         int o; // variable for controlling the octave
+
+        // GUI sliders
+        ofxPanel gui;
+        ofxIntSlider attackSlide;
+        ofxIntSlider decaySlide;
+        ofxIntSlider releaseSlide;
+        ofxFloatSlider sustainSlide;
+
 
 };

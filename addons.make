@@ -1,2 +1,3 @@
 ofxMaxim
 ofxOsc
+ofxGui

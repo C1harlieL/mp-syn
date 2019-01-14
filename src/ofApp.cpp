@@ -55,16 +55,23 @@ void ofApp::setup(){
     }
     std::cout << octaves.size() << std::endl;
 
+    // asdr controllers
+    gui.setup();
+    gui.add(attackSlide.setup("attack", 10, 5, 1000));
+    gui.add(decaySlide.setup("decay", 1000, 10, 2000));
+    gui.add(sustainSlide.setup("sustain", 0.5, 0.1, 2.0));
+    gui.add(releaseSlide.setup("release", 500, 10, 2000));
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
     // set envelope parameters
-    envelope.setAttack(10);
-    envelope.setDecay(1000);
-    envelope.setRelease(2000);
-    envelope.setSustain(0.5);
+    envelope.setAttack(attackSlide);
+    envelope.setDecay(decaySlide);
+    envelope.setRelease(releaseSlide);
+    envelope.setSustain(sustainSlide);
 
     // Map the hue of the colour to the same range
     // as the frequency and set this value to colour
@@ -82,14 +89,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    // background
+    ofPushMatrix();
     ofBackgroundGradient(ofColor(0), ofColor(200));
+    // move stuff to the center
     ofTranslate(200, 200);
-    // Draw the oct1ave
+    // Draw the octaves and back section
     ofSetColor(150);
     ofDrawRectangle(40, 0, 480, 320);
     ofPushMatrix();
-
-
     for(int i = 0; i < octaves.size(); i ++){
         octaves[i].draw(40, 40 + i*40);
     }
@@ -98,23 +106,27 @@ void ofApp::draw(){
     // Set the colour to the mapped hue value
     // and draw ellipse of that colour
     // ofTranslate(0, ofGetHeight()/2);
-    ofSetColor(c);
-    //ofDrawEllipse(ofGetWidth()/2., 0, 100, 100);
+    // ofSetColor(c);
+    // ofDrawEllipse(ofGetWidth()/2., 0, 100, 100);
 
-//    Draw wave form of the sound
-//    ofFill();
-//    int oldX = 0;
-//    int oldY = 0;
-//    for(int i = 0; i < ofGetWidth(); ++i) {
-//        ofDrawLine(oldX, oldY, i, waveform[i] * ofGetHeight()/2.);
-//        oldX = i;
-//        oldY = waveform[i] * ofGetHeight()/2.;
-//    }
+    //    Draw wave form of the sound
+    //    ofFill();
+    //    int oldX = 0;
+    //    int oldY = 0;
+    //    for(int i = 0; i < ofGetWidth(); ++i) {
+    //        ofDrawLine(oldX, oldY, i, waveform[i] * ofGetHeight()/2.);
+    //        oldX = i;
+    //        oldY = waveform[i] * ofGetHeight()/2.;
+    //    }
 
+    // draw the note names
     ofSetColor(0);
     for (int i = 0; i < notes.size(); i ++ ){
         f0.drawString(notes[i], 50 + i * 40, 20);
     }
+    ofPopMatrix();
+
+    gui.draw();
 
 }
 
