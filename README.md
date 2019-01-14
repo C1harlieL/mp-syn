@@ -12,7 +12,7 @@ You default to octave 3 and can use the ',' and '.' keys to move down and up and
 
 The idea of colour associated with sound I borrowed from the perceptual phenomenon of synesthesia, where one cognitive pathway such as the auditory one, causes automatic involuntary experiences in a second sensory pathway, maybe the visual one. This creates the effect of people seeing sounds, maybe as colours. Certain musical keys may create visual effects of a certain colour for a synesthete. Colours in my app are used to represent the most common twelve notes used in the western tonal music as a synesthetic visualiser for the notes. Colour could help with recognising patterns in music and to see which part of the octave you are in.
 
-The dots on the grid reacts to its corresponding note being played.
+The dots on the grid react to its corresponding note being played.
 
 ![Interface image ](https://github.com/C1harlieL/mp-syn/blob/master/interface.jpeg)
 
